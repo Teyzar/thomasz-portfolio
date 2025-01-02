@@ -127,7 +127,7 @@ const about = {
             {
                 company: 'Cloversoft Solutions',
                 timeframe: '2021',
-                role: 'Flutter Developer',
+                role: 'PHP Developer',
                 achievements: [
                     <>Modular Design: Easy integration into diverse projects, regardless of API complexity.</>,
                     <>Configurability: Customizable settings for different APIs, including endpoints and authentication.</>,
