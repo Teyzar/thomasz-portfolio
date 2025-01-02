@@ -1,15 +1,13 @@
-import { InlineCode } from "@/once-ui/components";
-
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Thomas',
+    lastName:  'Zaragoza',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
+    role:      'FullStack Developer',
     avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    location:  'Asia/Manila',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    languages: ['English', 'Tagalog']  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
@@ -24,12 +22,12 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/Teyzar',
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/zaragozathomasandrew/',
     },
     {
         name: 'X',
@@ -39,7 +37,7 @@ const social = [
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mailto:zaragozathomasandrew@gmail.com',
     },
 ]
 
@@ -47,8 +45,8 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>Hi, I'm Thomas ✨</>,
+    subline: <>I'm a passionate FullStack Developer who loves bringing ideas to life through code.<br/>Whether it's exploring new technologies or crafting creative solutions, I'm always excited to build something amazing.</>
 }
 
 const about = {
@@ -69,52 +67,83 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>Thomas is a Computer Engineering graduate from Bacolod City who has evolved into a skilled FullStack Developer. He specializes in Laravel for robust backend solutions and Flutter for cross-platform mobile development. With a passion for clean code and efficient solutions, he transforms complex technical challenges into seamless user experiences.</>
     },
     work: {
         display: true, // set to false to hide this section
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: 'G.O Green Enterprises Inc.',
+                timeframe: '2023 - Present',
+                role: 'Web Developer',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Built a product catalog editor for users, allowing them to add categories, upload images, and edit content.</>,
+                    <>Developed an admin dashboard to manage products, users, and access permissions.</>,
+                    <>Implemented search features in the admin panel for easier content management.</>,
+                    <>Fixed frontend issues, enhancing the user experience and interface stability with JavaScript and CSS improvements</>,
+                    <>Maintained and added multiple modules across different websites and third-party platforms.</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
+                        src: '/images/projects/plumbersstock/plumbersstock-01.png',
+                        alt: 'PlumbersStock',
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/adamsandco/adamsandco-01.png',
+                        alt: 'Adams and Co',
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/swplumbing/swplumbing-01.png',
+                        alt: 'SW Plumbing',
                         width: 16,
                         height: 9
                     }
                 ]
             },
             {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                company: 'AdvancePro Technologies',
+                timeframe: '2022 - 2024',
+                role: 'Flutter Developer',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Frontend Developer Specializing in cross-platform applications for Android, iOS, and macOS.</>,
+                    <>Created RESTful APIs and developed stored procedures for the backend and integrated them with the frontend.</>,
+                    <>Implemented customer-requested inventory reports and delivered them on time with high accuracy.</>,
+                    <>Used Git for version control and collaboration with the team.</>
                 ],
-                images: [ ]
+                images: [
+                    {
+                        src: '/images/projects/aptx/aptx-01.png',
+                        alt: 'APTX',
+                        width: 16,
+                        height: 9
+                    }
+                 ]
+            },
+            {
+                company: 'Cloversoft Solutions',
+                timeframe: '2021',
+                role: 'Flutter Developer',
+                achievements: [
+                    <>Modular Design: Easy integration into diverse projects, regardless of API complexity.</>,
+                    <>Configurability: Customizable settings for different APIs, including endpoints and authentication.</>,
+                    <>Data Transformation: Adapting data formats to match API and application requirements.</>
+                ],
+                images: []
             }
         ]
     },
     studies: {
         display: true, // set to false to hide this section
-        title: 'Studies',
+        title: 'Education',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
-            },
-            {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'University of Saint La Salle Bacolod',
+                description: <>Bachelor of Science in Computer Engineering</>,
             }
         ]
     },
@@ -123,132 +152,27 @@ const about = {
         title: 'Technical skills',
         skills: [
             {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-02.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                    {
-                        src: '/images/projects/project-01/cover-03.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
+                title: 'Flutter',
+                description: <>Developed cross-platform mobile applications using Flutter, focusing on performance and user experience.</>,
+                images: []
+            },
+            {
+                title: 'Laravel',
+                description: <>Built scalable and secure web applications using Laravel framework.</>,
+                images: []
+            },
+            {
+                title: 'ASP.NET Core',
+                description: <>Developed web API using ASP.NET Core, focusing on RESTful architecture and scalability.</>,
+                images: []
             },
             {
                 title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-04.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
+                description: <>Developed modern web applications with Next.js, focusing on performance optimization, server-side rendering, and exceptional user experiences.</>,
+                images: []
             }
         ]
     }
 }
 
-const blog = {
-    label: 'Blog',
-    title: 'Writing about design and tech...',
-    description: `Read what ${person.name} has been up to recently`
-    // Create new blog posts by adding a new .mdx file to app/blog/posts
-    // All posts will be listed on the /blog route
-}
-
-const work = {
-    label: 'Work',
-    title: 'My projects',
-    description: `Design and dev projects by ${person.name}`
-    // Create new project pages by adding a new .mdx file to app/blog/posts
-    // All projects will be listed on the /home and /work routes
-}
-
-const gallery = {
-    label: 'Gallery',
-    title: 'My photo gallery',
-    description: `A photo collection by ${person.name}`,
-    // Images from https://pexels.com
-    images: [
-        { 
-            src: '/images/gallery/img-01.jpg', 
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        { 
-            src: '/images/gallery/img-02.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-03.jpg', 
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        { 
-            src: '/images/gallery/img-04.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-05.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-06.jpg', 
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        { 
-            src: '/images/gallery/img-07.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-08.jpg', 
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        { 
-            src: '/images/gallery/img-09.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-10.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-11.jpg', 
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        { 
-            src: '/images/gallery/img-12.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-13.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-14.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-    ]
-}
-
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, home, about };
