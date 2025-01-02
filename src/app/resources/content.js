@@ -175,4 +175,12 @@ const about = {
     }
 }
 
-export { person, social, home, about };
+const work = {
+    label: 'Work',
+    title: 'My projects',
+    description: `Design and dev projects by ${person.name}`
+    // Create new project pages by adding a new .mdx file to app/blog/posts
+    // All projects will be listed on the /home and /work routes
+}
+
+export { person, social, home, about, work };
