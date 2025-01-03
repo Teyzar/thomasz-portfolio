@@ -211,6 +211,7 @@ export default function About(
                                                 {experience.company}
                                             </Text>
                                             <Text
+                                                className="hide-s"
                                                 variant="heading-default-xs"
                                                 onBackground="neutral-weak">
                                                 {experience.timeframe}
@@ -221,6 +222,13 @@ export default function About(
                                             onBackground="brand-weak"
                                             marginBottom="m">
                                             {experience.role}
+                                        </Text>
+                                        <Text
+                                            className="show-s"
+                                            variant="heading-default-xs"
+                                            onBackground="neutral-weak"
+                                            marginBottom="m">
+                                            {experience.timeframe}
                                         </Text>
                                         <Flex
                                             as="ul"
